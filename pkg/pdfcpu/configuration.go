@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
+	"github.com/lanceInGz/pdfcpu/pkg/font"
 )
 
 const (

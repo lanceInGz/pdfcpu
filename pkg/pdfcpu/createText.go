@@ -25,8 +25,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/pdfcpu/pdfcpu/pkg/font"
-	"github.com/pdfcpu/pdfcpu/pkg/types"
+	"github.com/lanceInGz/pdfcpu/pkg/font"
+	"github.com/lanceInGz/pdfcpu/pkg/types"
 	"golang.org/x/text/unicode/norm"
 )
 

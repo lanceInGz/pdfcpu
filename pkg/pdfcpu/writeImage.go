@@ -27,8 +27,8 @@ import (
 	"strings"
 
 	"github.com/hhrutter/tiff"
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
+	"github.com/lanceInGz/pdfcpu/pkg/filter"
+	"github.com/lanceInGz/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
 )
 

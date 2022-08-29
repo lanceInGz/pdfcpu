@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+	"github.com/lanceInGz/pdfcpu/pkg/log"
+	pdf "github.com/lanceInGz/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
 )
 

@@ -24,7 +24,7 @@ import (
 
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
+	"github.com/lanceInGz/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
 )
 

@@ -19,7 +19,7 @@ package validate
 import (
 	"strings"
 
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+	pdf "github.com/lanceInGz/pdfcpu/pkg/pdfcpu"
 	"github.com/pkg/errors"
 )
 

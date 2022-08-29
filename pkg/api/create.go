@@ -21,9 +21,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/create"
+	"github.com/lanceInGz/pdfcpu/pkg/log"
+	"github.com/lanceInGz/pdfcpu/pkg/pdfcpu"
+	"github.com/lanceInGz/pdfcpu/pkg/pdfcpu/create"
 )
 
 // CreatePDFFile creates a PDF file for an xRefTable and writes it to outFile.
