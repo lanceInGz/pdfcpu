@@ -96,13 +96,19 @@ func validateObjectReferenceDict(xRefTable *pdf.XRefTable, d pdf.Dict) error {
 		return nil
 	}
 
-	obj, err := xRefTable.Dereference(*ir)
+	// obj, err := xRefTable.Dereference(*ir)
+	// if err != nil {
+	// 	return err
+	// }
+
+	// if obj == nil {
+	// 	return errors.New("pdfcpu: validateObjectReferenceDict: missing required entry \"Obj\"")
+	// }
+
+	// ignore where obj is void
+	_, err := xRefTable.Dereference(*ir)
 	if err != nil {
 		return err
-	}
-
-	if obj == nil {
-		return errors.New("pdfcpu: validateObjectReferenceDict: missing required entry \"Obj\"")
 	}
 
 	return nil
