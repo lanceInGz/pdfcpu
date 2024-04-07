@@ -274,7 +274,8 @@ func (xRefTable *XRefTable) DereferenceDict(o Object) (Dict, error) {
 
 	d, ok := o.(Dict)
 	if !ok {
-		return nil, errors.Errorf("pdfcpu: dereferenceDict: wrong type %T <%v>", o, o)
+		// return nil, errors.Errorf("pdfcpu: dereferenceDict: wrong type %T <%v>", o, o)
+		return nil, nil
 	}
 
 	return d, nil
