@@ -18,6 +18,7 @@ package pdfcpu
 
 import (
 	"bytes"
+	// "fmt"
 	"strconv"
 	"strings"
 	"unicode/utf8"
@@ -106,6 +107,8 @@ func regularChar(c byte, esc bool) bool {
 // Unescape resolves all escape sequences of s.
 func Unescape(s string, enc bool) ([]byte, error) {
 
+	// fmt.Println(s)
+
 	var esc bool
 	var longEol bool
 	var octalCode string
@@ -114,6 +117,8 @@ func Unescape(s string, enc bool) ([]byte, error) {
 	for i := 0; i < len(s); i++ {
 
 		c := s[i]
+
+		// fmt.Println(i, c, s)
 
 		if longEol {
 			esc = false
@@ -168,10 +173,11 @@ func Unescape(s string, enc bool) ([]byte, error) {
 			continue
 		}
 
+		// 关闭以解决Unescape: illegal escape sequence \P detected: <Created By HP MFP (\PDF - 300X300 dpi)>错误
 		// Relax for issue 305 and also accept "\ ".
-		if !enc && !strings.ContainsRune(" nrtbf()01234567", rune(c)) {
-			return nil, errors.Errorf("Unescape: illegal escape sequence \\%c detected: <%s>", c, s)
-		}
+		// if !enc && !strings.ContainsRune(" nrtbf()01234567", rune(c)) {
+		// 	return nil, errors.Errorf("Unescape: illegal escape sequence \\%c detected: <%s>", c, s)
+		// }
 
 		var octal bool
 		octal, c = escaped(c)
